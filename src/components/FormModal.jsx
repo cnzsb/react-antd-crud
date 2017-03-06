@@ -42,7 +42,7 @@ export default class FormModal extends React.Component {
               <Factory
                 type={items.type}
                 target={formValues}
-                keyName={items.name}
+                keyName={items.tableKey}
                 onChange={onChange.inputOnChange} />
             </FormItem>
           ))}
