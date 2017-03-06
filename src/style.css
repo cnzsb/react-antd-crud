@@ -5,11 +5,11 @@ body {
 }
 
 .body {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
 
-// Fix ButtonGroup's borderRightColor
+/* Fix ButtonGroup's borderRightColor */
 .ant-btn-group .ant-btn-primary:last-child:not(:first-child)[disabled],
 .ant-btn-group .ant-btn-primary + .ant-btn[disabled] {
   border-right-color: #d9d9d9;

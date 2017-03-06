@@ -197,7 +197,7 @@ export default class Content extends React.Component {
     } else {
       selectedRowKeys.forEach((key) => {
         const index = findIndexByKey('key', key, lists);
-        lists[index] = Object.assign(lists[index], formValues);
+        lists[index] = {...lists[index], ...formValues};
       });
     }
 

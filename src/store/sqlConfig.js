@@ -1,32 +1,32 @@
 export default [
   {
-    tableName: 'HIAP',
-    name: '表 http_in_active_page',
+    tableName: 'Users',
+    name: '用户信息',
     headers: [
       {
         tableKey: 'id',
-        name: 'id',
+        name: 'ID',
         type: 'display',
         width: 50,
       },
       {
-        tableKey: 'req',
-        name: 'req',
+        tableKey: 'name',
+        name: '姓名',
         type: 'text',
-        width: 150,
-        validators: [
-          'required',
-        ],
-      },
-      {
-        tableKey: 'hit',
-        name: 'hit',
-        type: 'display',
         width: 80,
+        validators: [
+          'required',
+        ],
       },
       {
-        tableKey: 'hour',
-        name: 'hour',
+        tableKey: 'sex',
+        name: '性别',
+        type: 'text',
+        width: 50,
+      },
+      {
+        tableKey: 'age',
+        name: '年龄',
         type: 'text',
         width: 50,
         validators: [
@@ -34,8 +34,8 @@ export default [
         ],
       },
       {
-        tableKey: 'day',
-        name: 'day',
+        tableKey: 'remark',
+        name: '备注',
         type: 'text',
         width: 150,
         validators: [
@@ -45,8 +45,8 @@ export default [
     ],
   },
   {
-    tableName: 'Page',
-    name: '表 page',
+    tableName: 'None',
+    name: '异常模拟',
     headers: [
       {
         tableKey: 'id',
@@ -55,28 +55,28 @@ export default [
         width: 50,
       },
       {
-        tableKey: 'req',
-        name: 'req',
+        tableKey: 'name',
+        name: '姓名',
         type: 'text',
-        width: 150,
+        width: 80,
         validators: [
           'required',
         ],
       },
       {
         tableKey: 'comment',
-        name: 'comment',
+        name: '评论',
         type: 'text',
-        width: 150,
+        width: 200,
         validators: [
           '',
         ],
       },
       {
         tableKey: 'status',
-        name: 'status',
+        name: '状态',
         type: 'text',
-        width: 150,
+        width: 50,
         validators: [
           'required',
         ],

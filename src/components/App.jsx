@@ -9,7 +9,7 @@ export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      tableName: 'HIAP',
+      tableName: 'Users',
     };
 
     this.openTable = this.openTable.bind(this);
@@ -24,7 +24,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="body">
-        <h2 style={{ margin: '30px 0' }}>FeReasearch 管理平台</h2>
+        <h2 style={{ margin: '30px 0' }}>React CRUD</h2>
         <Menu
           style={{ backgroundColor: '#f3f3f4' }}
           defaultSelectedKeys={[this.state.tableName]}
