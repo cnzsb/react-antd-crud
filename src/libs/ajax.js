@@ -5,7 +5,7 @@ const $http = axios.create({});
 
 // response
 $http.interceptors.response.use(
-  ({ data }) => data.data,
+  ({ data: { data } }) => data,
   ({ response }) => {
     notification.error({
       message: '错误',
